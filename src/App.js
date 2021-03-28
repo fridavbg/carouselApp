@@ -4,7 +4,7 @@ import React from 'react';
 import Carousel from './components/Carousel.js';
 import Slide from './components/Slide.js';
 import ImagePicker from './components/ImagePicker';
-
+import Arrows from './components/Arrows';
 
 //Images
 import img1 from './img/1.jpg';
@@ -32,6 +32,7 @@ const App = () =>
         <Slide id="image-4">
             <img src={img4}/>
         </Slide>
+            <Arrows/>
     </Carousel>
 </div>
 );
