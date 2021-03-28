@@ -1,31 +1,34 @@
 body {
     background-color: lightgray;
 }
-body::-webkit-scrollbar {
-  width: 1em;
+
+.image-picker {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 20px;
 }
- 
-body::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 6px rgba(221, 23, 23, 0.3);
-}
- 
-body::-webkit-scrollbar-thumb {   
-    background:linear-gradient(
-        45deg,
-        #2b293a,
-        #e9daeb
-    );    
-    border-radius: 3px;
+.image-picker a {
+    border-style: solid;
+    border-color: rgb(194, 184, 184);
+    border-radius: 20px;
+    color: rgb(24, 23, 23);
+    margin: 5px;
+    padding: 5px;
+    text-decoration: none;
 }
 
+.image-picker a:active {
+    background-color: gray;
+} 
+
+
 .carousel-container {
-    align-items: center;
-    justify-content: center;
+    margin: 0 auto; 
 }
 .carousel { 
-    width: 90%;
+    width: 50%;
+    margin: auto;
     height: auto;
-    margin: 0 auto; 
     display: flex;
     overflow-y: hidden;
     -webkit-overflow-scrolling: touch;
@@ -49,24 +52,8 @@ body::-webkit-scrollbar-thumb {
     border-radius: 3px;
 } 
 
-.image-picker {
-    margin: 20px;
-    padding: 20px;
-    text-align: center;
-}
-.image-picker a {
-    border-style: solid;
-    border-color: rgb(194, 184, 184);
-    border-radius: 20px;
-    color: rgb(24, 23, 23);
-    margin: 15px;
-    padding: 10px;
-    text-decoration: none;
-}
-
 .slide { 
     width: 100%;
-    margin-bottom: 10px;
     flex-shrink: 0;
     scroll-snap-align: start;
     scroll-behavior: smooth;    

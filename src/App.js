@@ -3,6 +3,8 @@ import React from 'react';
 //Components
 import Carousel from './components/Carousel.js';
 import Slide from './components/Slide.js';
+import ImagePicker from './components/ImagePicker';
+
 
 //Images
 import img1 from './img/1.jpg';
@@ -12,7 +14,8 @@ import img4 from './img/4.jpg';
 
 const App = () => 
 (
-<>
+<div className="carousel-container">
+     <ImagePicker/>
     <Carousel>
         <Slide id="image-1">
             <img src={img1}/>
@@ -30,7 +33,7 @@ const App = () =>
             <img src={img4}/>
         </Slide>
     </Carousel>
-</>
+</div>
 );
 
 export default App;
