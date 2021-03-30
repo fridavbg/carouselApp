@@ -1,26 +1,35 @@
-# Main requirements
+# Carousel App
 
-* Setup the environment manually (including Webpack or any other bundler configuration).
+# Main goal
 
-* Create a carousel component that works on mobile and desktop, demonstrate it in action.
-* Make a useful readme - tell us how to set up your application.
+I've never created a React app from scratch so this was a way for me to make sure I understand all the things related to webpack and babel. 
+After the basic set up of webpack I wanted to create a simple Carousel App that works for both desktop and mobile screens (finger-swipes).
 
-# The requirements for the carousel are:
+# Install and get started
 
-* Must work for mobile and desktop devices [/]
-* Must support swipes []
-* Must work for any HTML content - DBL CHECK WITH RECRUITER {}
-* Must be animated, finger-following swipes, you can use a multi-picture post in Instagram as a reference.
 
-# Following carousel features will be considered as advantages:
+```
+1- $ git clone https://github.com/fridavbg/carouselApp.git
 
-* Supports multiple slides on the screen
-* Supports infinite option
-* Supports scrolling to a selected slide (like go to slide X)
+2- $ cd carouselApp
 
-### Any optimizations related to performance are welcome and appreciated!
-Also:
+3 - $ npm i
 
-* Using any runtime libraries is prohibited except for the react core itself and CSS-in-JS approach allowers.
-* Using environment setup automatizers (like create-react-app) is prohibited.
-* Submitting any code that is not written by you
+4 - $ npm start
+
+```
+1. Clone repo to your local machine
+2. Move into the react app folder
+3. Install dependencies with npm 
+4. Start app server
+
+## Open Browser
+
+Now the app is up and running on http://localhost:8080/
+
+You can choose to look at an image by choosing it's id number on top of the page.
+Or just plainly scroll through them all with the scrollbar at the bottom of each image. If you are on a mobile device you can also swipe through them all. 
+
+## Upcoming feature
+
+Check out the Arrows branch, where I'm working on some arrow buttons that will give an extra option to scroll through the images.

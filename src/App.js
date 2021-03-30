@@ -15,7 +15,7 @@ import img4 from './img/4.jpg';
 const App = () => 
 (
 <div className="carousel-container">
-     <ImagePicker/>
+    <ImagePicker/>
     <Carousel>
         <Slide id="image-1">
             <img src={img1}/>

@@ -12,9 +12,3 @@ const ImagePicker = (props) => (
 )
 
 export default ImagePicker;
-
-{/* 
-<div>
-    {props.children.map(child => <a>{child}</a>)}
-</div> 
-*/}
