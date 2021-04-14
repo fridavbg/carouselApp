@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import 'App.css';
 
 import Arrows from './Arrows.js';
-import Slide from './Slide.js';
 import ImagePicker from './ImagePicker';
 
 
@@ -24,9 +23,9 @@ return (
         <ImagePicker slides={props.slides}/>
         <div className="carousel">
         {props.slides.map(slide => 
-            <Slide id={slide.id} key={slide.id}>
+            <div className="slide" id={slide.id} key={slide.id}>
                 {slide.slide}
-            </Slide>
+            </div>
             )}
             </div>
         <Arrows nextId={props.slides[Math.min(current + 1, length - 1)].id} prevId={props.slides[Math.max(current - 1, 0)].id} next={nextSlide} prev={prevSlide}/>   
