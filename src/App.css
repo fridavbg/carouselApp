@@ -1,17 +1,23 @@
 body {
     background-color: lightgray;
+    margin-top: 50px;
+}
+.title {
+    text-align: center;
+    font-size: 45px;
+    font-family: 'Courier New', Courier, monospace;
 }
 .image-picker {
     text-align: center;
-    font-family: 'Courier New', Courier, monospace;
     margin: 20px;
+    padding: 10px;
 }
 .image-picker a {
     border-style: solid;
     border-color: rgb(194, 184, 184);
-    border-radius: 20px;
+    border-radius: 10px;
     color: rgb(24, 23, 23);
-    margin: 5px;
+    margin: 10px;
     padding: 5px;
     text-decoration: none;
 }
@@ -32,7 +38,6 @@ body {
 }
 
 .carousel::-webkit-scrollbar {
-    /* display: none;*/
     border-radius: 5px;
 }
 .carousel::-webkit-scrollbar-track {
@@ -61,7 +66,7 @@ body {
 .left-arrow, .right-arrow {
     position: absolute;
     z-index: 1;
-    top: 30%;
+    top: 50%;
     transform: translateY(200%);
     width: 48px;
     height: 48px;
@@ -86,7 +91,7 @@ body {
     .left-arrow, .right-arrow {
     position: absolute;
     z-index: 1;
-    top: 5%;
+    top: 25%;
     transform: translateY(200%);
     width: 48px;
     height: 48px;
