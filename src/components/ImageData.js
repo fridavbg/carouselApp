@@ -7,20 +7,24 @@ import img4 from "../img/4.jpg";
 
 const ImageData = [
   {
-    id: 0,
+    id: 1,
     slide: <img src={img1} />,
   },
   {
-    id: 1,
+    id: 2,
     slide: <img src={img2} />,
   },
   {
-    id: 2,
+    id: 3,
     slide: <img src={img3} />,
   },
   {
-    id: 3,
+    id: 4,
     slide: <img src={img4} />,
+  },
+  {
+    id: 5,
+    slide: <img src={img2} />,
   },
 ];
 
