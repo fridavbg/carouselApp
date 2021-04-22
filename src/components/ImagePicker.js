@@ -1,13 +1,20 @@
 import React from 'react';
 import 'App.css';
 
+
 const ImagePicker = (props) => (
-        
     <div className="image-picker">
-        <a href="#image-1">1</a>
-        <a href="#image-2">2</a>
-        <a href="#image-3">3</a>
-        <a href="#image-4">4</a>
+        {props.slides.map((child, index) =>
+        <a
+        className={props.current === index ? 'activeImage' : 'defaultImage'}
+        href={`#${child.id}`} 
+        key={index}
+        onClick={() => {
+            window.location.href = `#${child.id}`
+            props.setCurrent(index);
+        }}
+        >        
+        </a>)}
     </div>
 )
 

@@ -1,39 +1,16 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 //Components
 import Carousel from './components/Carousel.js';
-import Slide from './components/Slide.js';
-import ImagePicker from './components/ImagePicker';
+import ImageData from './components/ImageData.js'
 
-
-//Images
-import img1 from './img/1.jpg';
-import img2 from './img/2.jpg';
-import img3 from './img/3.jpg';
-import img4 from './img/4.jpg';
-
-const App = () => 
-(
-<div className="carousel-container">
-    <ImagePicker/>
-    <Carousel>
-        <Slide id="image-1">
-            <img src={img1}/>
-        </Slide>
-
-        <Slide id="image-2">
-            <img src={img2}/>
-        </Slide>
-
-        <Slide id="image-3">
-            <img src={img3}/>
-        </Slide>
-
-        <Slide id="image-4">
-            <img src={img4}/>
-        </Slide>
-    </Carousel>
-</div>
-);
+const App = () => {
+return (
+    <div className="carousel-container">
+        <h3 className="title">React Carousel App</h3>
+        <Carousel slides={ImageData}></Carousel> 
+    </div> 
+    );
+}
 
 export default App;

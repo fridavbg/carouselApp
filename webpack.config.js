@@ -10,7 +10,6 @@ module.exports = {
     filename: "bundle.[fullhash].js",
     path: path.resolve(__dirname, "dist"),
   },
-  devtool: 'source-map',
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
