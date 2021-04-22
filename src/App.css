@@ -89,7 +89,7 @@ body {
     background-color: gray;
 } 
 .activeImage {
-    background-color: chartreuse;
+    background-color: gray;
 }
 .defaultImage {
     background-color: transparent;
